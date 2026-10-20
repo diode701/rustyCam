@@ -23,24 +23,26 @@ pub struct Camera {
 }
 
 pub fn config_path() -> PathBuf {
-    ProjectDirs::from("com", "diode", "cam-monitor")
+    ProjectDirs::from("com", "diode", "rusty-cam") //
         .expect("no home dir")
         .config_dir()
         .join("config.toml")
 }
+
 const TEMPLATE: &str = r#"arp_scan_path = "arp-scan"
 ffplay_path = "ffplay"
-iface = "wlan0"
+iface = ""
 subnet = "192.168.1.0/24"
 
 [camera]
-name     = "living-room"
-mac      = "30:dd:aa:ba:7d:e6"
-user     = "admin"
-password = "L22DCFE7"
+name     = ""
+mac      = ""
+user     = ""
+password = ""
 channel  = 1
 subtype  = 1
 "#;
+
 pub fn load() -> Config {
     let path = config_path();
 
