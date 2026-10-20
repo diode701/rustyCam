@@ -1,5 +1,5 @@
 [package]
-name = "cam013"
+name = "rustyCam"
 version = "0.1.0"
 edition = "2024"
 
