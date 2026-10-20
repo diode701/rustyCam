@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 # Configuration
 APP_NAME="rustu-cam"
-CARGO_BIN_NAME="rustCam"
+CARGO_BIN_NAME="rustyCam"
 INSTALL_DIR="$HOME/bin"
 CONFIG_ROOT="${XDG_CONFIG_HOME:-$HOME/.config}"
 CONFIG_DIR="$CONFIG_ROOT/rusty-cam"
