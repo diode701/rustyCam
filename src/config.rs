@@ -32,7 +32,7 @@ pub fn config_path() -> PathBuf {
 const TEMPLATE: &str = r#"arp_scan_path = "arp-scan"
 ffplay_path = "ffplay"
 iface = ""
-subnet = "192.168.1.0/24"
+subnet = "192.168.111.0/11"
 
 [camera]
 name     = ""
