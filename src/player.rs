@@ -16,7 +16,7 @@ pub fn run(ffplay_path: &str, camera: &Camera, ip: &str) -> std::io::Result<()> 
     let mut child = Command::new(ffplay_path)
         .args([
             "-fs", "-rtsp_transport", "tcp", "-buffer_size", "2048000",
-            "-max_delay", "10000000", "-infbuf", "-analyzeduration", "10000000",
+            "-max_delay", "5000000", "-infbuf", "-analyzeduration", "5000000",
             "-probesize", "10000000", "-ec", "guess_mvs", "-reorder_queue_size", "1024",
         ])
         .arg(&url)
